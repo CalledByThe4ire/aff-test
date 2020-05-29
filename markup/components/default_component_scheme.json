@@ -1,0 +1,28 @@
+{
+    "folders": [
+        {
+            "name": "data",
+            "files": [
+                {
+                    "name": "data.js",
+                    "content": "/* eslint-disable no-unused-vars */\nconst data = { __componentName__: {} };\n"
+                }
+            ]
+        }
+    ],
+
+    "files": [
+        {
+            "name": "__componentName__.__templateExtension__",
+            "content": "mixin __componentName__(data)\n\t+b('div').__componentName__&attributes(attributes)\n\t\tblock"
+        },
+        {
+            "name": "__componentName__.__cssExtension__",
+            "content": ".__componentName__ {\n  display: block;\n}\n"
+        },
+        {
+            "name": "__componentName__.js",
+            "content": ""
+        }
+    ]
+}

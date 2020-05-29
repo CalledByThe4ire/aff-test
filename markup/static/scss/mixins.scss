@@ -1,0 +1,60 @@
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin margin-x($margin) {
+    margin-right: $margin;
+    margin-left: $margin;
+}
+
+@mixin margin-y($margin) {
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+@mixin padding-x($padding) {
+    padding-right: $padding;
+    padding-left: $padding;
+}
+
+@mixin padding-y($padding) {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+@mixin icon-colors($fallback: black) {
+    fill: $fallback;
+    @content;
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+@mixin button-reset {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin bg-image-retina($filename, $extension) {
+  background-image: url($filename+'.'+$extension);
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx),
+    only screen and (min-device-pixel-ratio: 2) {
+    background-image: url($filename+'@2x.'+$extension);
+  }
+}

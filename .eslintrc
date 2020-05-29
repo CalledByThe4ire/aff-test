@@ -1,0 +1,22 @@
+{
+    "root": true,
+
+    "env": {
+        "node": true,
+        "browser": true,
+        "commonjs": true,
+        "jquery": true,
+        "es6": true
+    },
+
+    "globals": {
+        "tars": true
+    },
+
+    "extends": ["airbnb-base", "plugin:prettier/recommended"],
+
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    }
+}
