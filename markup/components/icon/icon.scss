@@ -1,3 +1,16 @@
 .icon {
+  $icon: &;
+
   display: flex;
+
+  &--triangle {
+    &#{$icon}--filled {
+      --fill: #000;
+      --stroke: none;
+    }
+    &#{$icon}--stroked {
+      --fill: none;
+      --stroke: #000;
+    }
+  }
 }

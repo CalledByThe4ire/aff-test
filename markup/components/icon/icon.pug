@@ -1,2 +1,2 @@
-mixin icon(name, width, height)
-	!= pugHelpers.Icon.call(locals, {iconName: name, className: `icon icon--${name}`, iconWidth: width, iconHeight: height})
+mixin icon(name, width, height, clazz=`icon icon--${name}`)
+	!= pugHelpers.Icon.call(locals, {iconName: name, className: clazz, iconWidth: width, iconHeight: height})

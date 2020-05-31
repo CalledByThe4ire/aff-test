@@ -1,0 +1,53 @@
+include ../icon/icon.pug
+
+mixin ornament(data)
+	+b('div').ornament&attributes(attributes)
+		+e('div').group--first.ornament-group-first__
+			+e('span').item--first A
+			+e('span').item--second G
+			+e('span').item--third E
+
+		+e('div').group--second.ornament-group-second__
+			span 51
+
+		+e('div').group--third.ornament-group-third__
+			+e('span').item--first (1)
+			+e('span').item--second (3)
+
+		+e('div').group--fourth.ornament-group-fourth__
+			+e('div').container
+				+e('span').item--first 13
+				+e('span').item--second 7
+
+		+e('div').group--fifth.ornament-group-fifth__
+			+e.container
+				+e('div').inner
+					+e('div').min
+						+e('span').item
+							+icon('triangle', 22.8, 23.2, 'icon icon--triangle icon--filled')
+					+e('div').mid.ornament-group-fifth-mid__
+						+e('span').item--first A
+						+e('span').item--second F
+					+e('div').max.ornament-group-fifth-max__
+						+e('span').item--first
+							+icon('triangle', 22.8, 23.2, 'icon icon--triangle icon--stroked')
+						+e('span').item--second F
+						+e('span').item--third I
+						+e('span').item--fourth N
+				+e('div').inner
+					+e('div').min
+						+e('span').item
+							+icon('triangle', 22.8, 23.2, 'icon icon--triangle icon--stroked')
+					+e('div').mid.ornament-group-fifth-mid__
+						+e('span').item--first A
+						+e('span').item--second
+							+e('div').inner
+								+icon('g', 17.23, 17.5)
+								span G
+					+e('div').max.ornament-group-fifth-max__
+						+e('span').item--first
+							+icon('triangle', 22.8, 23.2, 'icon icon--triangle icon--filled')
+						+e('span').item--second E
+
+		+e('div').group--sixth.ornament-group-sixth__
+			+e('div').container
