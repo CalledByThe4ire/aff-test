@@ -71,7 +71,9 @@ if (tars.config.js.lint) {
             enforce: 'pre',
             include: `${cwd}/markup`,
             options: {
-                configFile: `${cwd}/.eslintrc`
+                configFile: `${cwd}/.eslintrc`,
+                emitWarning: true,
+                failOnWarning: false,
             }
         }
     );
