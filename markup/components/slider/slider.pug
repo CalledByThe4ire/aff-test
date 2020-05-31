@@ -3,19 +3,19 @@ include ../icon/icon.pug
 mixin slider(data)
 	+b('div').slider&attributes(attributes)
 		+e('ul').wrapper
-			+e.item--back(class='animate__animated', data-caption='arc')
+			+e.item--back(data-caption='arc')
 				picture
 					source(media='(min-width: 576px)', srcset=`%=static=%img/content/arc--large.jpg, %=static=%img/content/arc--large@2x.jpg 2x`)
 					+e('img').image(src=`%=static=%img/content/arc.jpg`, srcset=`%=static=%img/content/arc@2x.jpg 2x`, alt='arc')
-			+e.item--front(class='animate__animated', data-caption='ural 03')
+			+e.item--front(data-caption='ural 03')
 				picture
 					source(media='(min-width:576px)', srcset=`%=static=%img/content/ural--large.jpg, %=static=%img/content/ural--large@2x.jpg 2x`)
 					+e('img').image(src=`%=static=%img/content/ural.jpg`, srcset=`%=static=%img/content/ural@2x.jpg 2x`, alt='ural 03')
 		+e('ul').controls.controls-slider__
 			+e.item--prev
-				+e.link(href='#')
+				+e('button').btn
 					+icon('arrow', 20, 36)
 			+e.item--next
-				+e.link(href='#')
+				+e('button').btn
 					+icon('arrow', 20, 36)
 

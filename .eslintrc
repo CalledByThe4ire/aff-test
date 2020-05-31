@@ -16,7 +16,7 @@
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
 
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 8,
     "sourceType": "module"
   },
   "rules": {
@@ -52,6 +52,6 @@
       },
       // Always require blank lines before return statements
       { "blankLine": "always", "prev": "*", "next": "return" }
-    ],
+    ]
   }
 }

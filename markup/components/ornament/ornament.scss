@@ -9,6 +9,7 @@
 
   &::before {
     content: '';
+    z-index: 5;
     position: absolute;
     top: -43px;
     right: -128px;
@@ -29,7 +30,6 @@
   }
 
   &__group {
-    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -39,6 +39,7 @@
 .ornament-group {
   &-first {
     &__item {
+      z-index: 10;
       position: absolute;
       top: 0;
       right: 0;
@@ -89,6 +90,7 @@
   }
 
   &-second {
+    z-index: 10;
     position: absolute;
     top: 132px;
     left: 562px;
@@ -107,6 +109,7 @@
   }
 
   &-third {
+    z-index: 10;
     position: absolute;
     top: 180px;
     left: 225px;
@@ -132,6 +135,7 @@
   &-fourth {
     @include size(148px);
 
+    z-index: 10;
     position: absolute;
     bottom: -74px;
     right: -74px;
@@ -211,6 +215,7 @@
   &-fifth {
     $ornament-group-fifth: &;
 
+    z-index: 10;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -406,6 +411,7 @@
   }
 
   &-sixth {
+    z-index: 10;
     position: absolute;
     left: 50%;
     bottom: 0;
