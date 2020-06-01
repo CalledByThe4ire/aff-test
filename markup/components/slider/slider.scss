@@ -67,6 +67,7 @@
       }
 
       @include media-breakpoint-up(lg) {
+        top: 0;
         width: 600px;
         height: 390px;
       }

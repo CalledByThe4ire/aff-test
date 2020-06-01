@@ -1,7 +1,7 @@
 {
-  "name": "awesome_project",
+  "name": "aff_test",
   "version": "1.0.0",
-  "description": "Your awesome project description",
+  "description": "Awesome Test for Awesome Company",
   "main": "gulpfile.js",
   "directories": {},
   "dependencies": {

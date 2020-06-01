@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 const data = {
   head: {
-    title: 'Affinage',
+    title: 'aff_test',
     useSocialMetaTags: false
   }
 };
